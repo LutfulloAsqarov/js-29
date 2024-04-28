@@ -1,0 +1,66 @@
+.form {
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 800px;
+
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 50px 0;
+    }
+    &__input {
+        width: calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span {
+            color: red;
+        }
+        input {
+            width: 100%;
+            padding: 10px 10px;
+            outline: none;
+            border: 1px solid #eaeaea;
+            border-radius: 3px;
+            &:focus {
+                border-color: $primaryCl;
+            }
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 20px;
+    }
+    &__change-btn,
+    &__remove-btn {
+        background: $primaryCl;
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 3px;
+        border: 2px solid transparent;
+        transition: 0.4s;
+        &:hover {
+            border-color: $primaryCl;
+            background: #fff;
+            color: $primaryCl;
+        }
+    }
+    &__remove-btn {
+        background: #fff;
+        color: #3d3d3d;
+    }
+}
+.logout {
+    color: red;
+    padding: 8px 17px;
+    transition: 0.4s;
+    border-radius: 6px;
+
+    &:hover {
+        background: red;
+        color: #fff;
+    }
+}

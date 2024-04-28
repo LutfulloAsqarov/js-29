@@ -1,0 +1,95 @@
+// .login-form {
+//     display: flex;
+//     background-size: 200%;
+//     width: 400px;
+//     overflow: hidden;
+// }
+
+#login {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    .left {
+        position: relative;
+        padding: 50px;
+        background: #fff;
+        border-radius: 10px;
+        background-size: 200%;
+    }
+
+    .xmark {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        width: 15px;
+    }
+
+    .login {
+        text-align: center;
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+            .line {
+                height: 15px;
+                width: 2px;
+                background: #3d3d3d;
+                border-radius: 2px;
+            }
+            a {
+                transition: 0.4s;
+            }
+            a:hover {
+                color: $primaryCl;
+            }
+            a:focus {
+                color: $primaryCl;
+            }
+        }
+
+        &__info {
+            font-size: 13px;
+            padding: 50px 0 15px;
+            color: #3d3d3d;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+            .input {
+                padding: 12px 14px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                border: 1px solid #3d3d3d;
+                &:focus {
+                    border-color: $primaryCl;
+                }
+            }
+            &__btn {
+                background: $primaryCl;
+                padding: 12px;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.close-form {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #bfbfbf67;
+    z-index: 999;
+    display: none;
+}
