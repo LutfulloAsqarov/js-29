@@ -464,6 +464,12 @@ button {
   padding: 150px 0;
 }
 
+.product__no {
+  margin: 0 auto;
+  padding: 100px 0;
+  color: red;
+}
+
 .filter__categories {
   display: flex;
   flex-direction: row;
